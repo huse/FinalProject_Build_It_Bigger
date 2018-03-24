@@ -25,14 +25,40 @@ apply plugin: 'com.google.cloud.tools.endpoints-framework-server'
 
 sourceCompatibility = JavaVersion.VERSION_1_7
 targetCompatibility = JavaVersion.VERSION_1_7
+buildscript {
+    repositories {
+        mavenCentral()
+    }
 
+    dependencies {
+        classpath 'com.google.appengine:gradle-appengine-plugin:1.9.28'
+    }
+}
 dependencies {
-    implementation 'com.google.endpoints:endpoints-framework:2.0.9'
+//    appengineSdk 'com.google.appengine:appengine-java-sdk:1.9.28'
+    compile 'com.google.appengine:appengine-endpoints:1.9.28'
+    compile 'com.google.appengine:appengine-endpoints-deps:1.9.28'
+    compile 'javax.servlet:servlet-api:2.5'
+//    compile project(':javajoketellinglibrary')
+    /*implementation 'com.google.endpoints:endpoints-framework:2.0.9'
     implementation 'javax.inject:javax.inject:1'
 
     implementation 'javax.servlet:servlet-api:2.5'
     implementation 'com.google.api-client:google-api-client:1.23.0'
     implementation 'com.google.http-client:google-http-client-android:1.23.0'
-    compile files('C:\\Program Files (x86)\\Google\\Cloud SDK')
+    compile files('C:\\Program Files (x86)\\Google\\Cloud SDK')*/
 
 }
+/*
+appengine {
+    downloadSdk = true
+    httpAddress = '0.0.0.0'
+    appcfg {
+        oauth2 = true
+    }
+    endpoints {
+        getClientLibsOnBuild = true
+        getDiscoveryDocsOnBuild = true
+        googleClientVersion = '1.23.0'
+    }
+}*/

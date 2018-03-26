@@ -3,6 +3,7 @@ package com.udacity.gradle.builditbigger.backend;
 /**
  * Created by hk640d on 3/25/2018.
  */
+import com.google.api.client.googleapis.services.GoogleClientRequestInitializer;
 import com.google.api.client.googleapis.services.json.AbstractGoogleJsonClient;
 import com.google.api.client.http.HttpRequestInitializer;
 import com.google.api.client.http.HttpTransport;
@@ -24,16 +25,16 @@ public class ApiJoker   extends AbstractGoogleJsonClient {
         this.initialize(result);
         return result;
     }
-    public static final String URL = "";
-    public static final String PATH = "";
-    public static final String BATCH = "";
+    /*public static final String URL = "https://myApplicationId.appspot.com/_ah/api/";
+    public static final String PATH = "myJokeApi/v1/";
+    public static final String BATCH = "batch";*/
 
     public static final class Builder extends com.google.api.client.googleapis.services.json.AbstractGoogleJsonClient.Builder {
-       /* public Builder(HttpTransport transport, JsonFactory jsonFactory, HttpRequestInitializer httpRequestInitializer) {
+        public Builder(HttpTransport transport, JsonFactory jsonFactory, HttpRequestInitializer httpRequestInitializer) {
             super(transport, jsonFactory, "https://myApplicationId.appspot.com/_ah/api/", "myJokeApi/v1/", httpRequestInitializer, false);
             this.setBatchPath("batch");
-        }*/
-        public Builder(com.google.api.client.http.HttpTransport transport, com.google.api.client.json.JsonFactory jsonFactory,
+        }
+        /*public Builder(com.google.api.client.http.HttpTransport transport, com.google.api.client.json.JsonFactory jsonFactory,
                        com.google.api.client.http.HttpRequestInitializer httpRequestInitializer) {
             super(
                     transport,
@@ -43,11 +44,21 @@ public class ApiJoker   extends AbstractGoogleJsonClient {
                     httpRequestInitializer,
                     false);
             setBatchPath(BATCH);
-        }
+        }*/
         @Override
-        public AbstractGoogleJsonClient build() {
-            return null;
+        public ApiJoker build() {
+            return new ApiJoker(this);
         }
+
+
+        public ApiJoker.Builder setUrl(String rootUrl) {
+            return (ApiJoker.Builder)super.setRootUrl(rootUrl);
+        }
+
+        public ApiJoker.Builder setClientRequestGoogle(GoogleClientRequestInitializer googleClientRequestInitializer) {
+            return (ApiJoker.Builder)super.setGoogleClientRequestInitializer(googleClientRequestInitializer);
+        }
+
     }
 
     public class GetJoke extends ApiJokeRequest<MyBean> {

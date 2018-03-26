@@ -19,6 +19,7 @@ buildscript {
         classpath 'com.google.appengine:gradle-appengine-plugin:1.9.59'
     }
 }
+
 android {
     compileSdkVersion 26
     buildToolsVersion "26.0.3"
@@ -32,6 +33,12 @@ android {
         multiDexEnabled true
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath false
+            }
+        }
     }
     lintOptions {
         abortOnError false
@@ -41,6 +48,9 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    }
+    packagingOptions {
+        exclude 'com/google/appengine/repackaged/org/apache/commons/codec/language/bm/sep_approx_spanish.txt'
     }
 }
 

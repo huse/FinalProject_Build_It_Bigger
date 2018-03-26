@@ -33,14 +33,13 @@ public class GettingJokeByAsynTask extends AsyncTask<Void, Void, String> {
         if(apiServe == null) {  // Only do this once
             ApiJoker.Builder builder = new ApiJoker.Builder(AndroidHttp.newCompatibleTransport(),
                     new AndroidJsonFactory(), null)
-                    .setRootUrl("http://10.0.2.2:8080/_ah/api/")
-                    .setGoogleClientRequestInitializer(new GoogleClientRequestInitializer() {
+                    .setUrl("http://10.0.2.2:8080/_ah/api/")
+                    .setClientRequestGoogle(new GoogleClientRequestInitializer() {
                         @Override
                         public void initialize(AbstractGoogleClientRequest<?> abstractGoogleClientRequest) throws IOException {
                             abstractGoogleClientRequest.setDisableGZipContent(true);
                         }
                     });
-            // end options for devappserver
 
             apiServe = builder.build();
         }

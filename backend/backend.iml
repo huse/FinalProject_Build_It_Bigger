@@ -18,7 +18,7 @@
         <option name="HTTP_PORT" value="8080" />
         <option name="WAR_DIR" value="C:\Users\hk640d\AndroidStudioProjects\ud867\FinalProject\backend\build\exploded-app" />
         <option name="WEB_APP_DIR" value="C:\Users\hk640d\AndroidStudioProjects\ud867\FinalProject\backend\src\main\webapp" />
-        <option name="APPENGINE_SDKROOT" value="C:\Users\hk640d\.gradle\appengine-sdk\appengine-java-sdk-1.9.28" />
+        <option name="APPENGINE_SDKROOT" value="C:\Users\hk640d\.gradle\appengine-sdk\appengine-java-sdk-1.9.59" />
       </configuration>
     </facet>
   </component>
@@ -40,8 +40,8 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="libjoke" exported="" />
     <orderEntry type="module" module-name="libjoke" exported="" />
-    <orderEntry type="library" exported="" scope="PROVIDED" name="appengine-endpoints-1.9.28" level="project" />
-    <orderEntry type="library" exported="" scope="PROVIDED" name="appengine-endpoints-deps-1.9.28" level="project" />
+    <orderEntry type="library" exported="" scope="PROVIDED" name="appengine-endpoints-1.9.59" level="project" />
+    <orderEntry type="library" exported="" scope="PROVIDED" name="appengine-endpoints-deps-1.9.59" level="project" />
     <orderEntry type="library" exported="" scope="PROVIDED" name="servlet-api-2.5" level="project" />
     <orderEntry type="library" exported="" scope="PROVIDED" name="google-api-client-android-1.23.0" level="project" />
     <orderEntry type="library" exported="" scope="PROVIDED" name="google-api-client-1.23.0" level="project" />
@@ -49,7 +49,7 @@
     <orderEntry type="library" exported="" scope="PROVIDED" name="google-oauth-client-1.23.0" level="project" />
     <orderEntry type="library" exported="" scope="PROVIDED" name="google-http-client-jackson2-1.23.0" level="project" />
     <orderEntry type="library" exported="" scope="PROVIDED" name="google-http-client-1.23.0" level="project" />
-    <orderEntry type="library" exported="" scope="PROVIDED" name="appengine-api-1.0-sdk-1.9.28" level="project" />
+    <orderEntry type="library" exported="" scope="PROVIDED" name="appengine-api-1.0-sdk-1.9.59" level="project" />
     <orderEntry type="library" exported="" scope="PROVIDED" name="guava-jdk5-17.0" level="project" />
     <orderEntry type="library" exported="" scope="PROVIDED" name="jsr305-1.3.9" level="project" />
     <orderEntry type="library" exported="" scope="PROVIDED" name="httpclient-4.0.1" level="project" />

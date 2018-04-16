@@ -14,6 +14,7 @@ import static com.hpr.hus.libjoke.jokeClass.getJokes;
 
 
 public class MainActivity extends AppCompatActivity {
+    public final static String JOKE_INTENT = "JOKE_INTENT";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

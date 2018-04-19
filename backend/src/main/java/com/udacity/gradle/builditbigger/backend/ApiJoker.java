@@ -4,13 +4,17 @@ package com.udacity.gradle.builditbigger.backend;
  * Created by hk640d on 3/25/2018.
  */
 import com.google.api.client.googleapis.services.json.AbstractGoogleJsonClient;
+//import android.util.Log;
+
+import java.util.logging.Logger;
 
 public class ApiJoker   extends AbstractGoogleJsonClient {
+Logger log= Logger.getLogger("InfoLogging");
 
     static {
         com.google.api.client.util.Preconditions.checkState(
                 com.google.api.client.googleapis.GoogleUtils.MAJOR_VERSION == 1 &&
-                        com.google.api.client.googleapis.GoogleUtils.MINOR_VERSION >= 15,
+                        com.google.api.client.googleapis.GoogleUtils.MINOR_VERSION >= 21,
                 "You are currently running with version %s of google-api-client. " +
                         "You need at least version 1.21 of google-api-client to run version " +
                         "1.23.0 of the myJokeApi library.", com.google.api.client.googleapis.GoogleUtils.VERSION);
@@ -36,12 +40,19 @@ public class ApiJoker   extends AbstractGoogleJsonClient {
 
 
     public GettingJokes gettingJoke() throws java.io.IOException {
+
         GettingJokes result = new GettingJokes();
+        log.info("hhh"+ "gettingJoke 1: " + result);
+
         initialize(result);
+        log.info("hhh"+ "gettingJoke 2: " + result);
+       // Log.v("hhh", "gettingJoke 1: " + result);
         return result;
     }
     @Override
     protected void initialize(com.google.api.client.googleapis.services.AbstractGoogleClientRequest<?> httpClientRequest) throws java.io.IOException {
+        log.info("hhh"+ "initialize 1: " + httpClientRequest);
+
         super.initialize(httpClientRequest);
     }
     public class GettingJokes extends ApiJokeRequest<MyBean> {
@@ -105,9 +116,10 @@ public class ApiJoker   extends AbstractGoogleJsonClient {
     }
 
     public static final class JokeBuilder extends com.google.api.client.googleapis.services.json.AbstractGoogleJsonClient.Builder {
-
+        Logger log= Logger.getLogger("InfoLogging");
         public JokeBuilder(com.google.api.client.http.HttpTransport transport, com.google.api.client.json.JsonFactory jsonFactory,
                            com.google.api.client.http.HttpRequestInitializer httpRequestInitializer) {
+
             super(
                     transport,
                     jsonFactory,
@@ -116,55 +128,78 @@ public class ApiJoker   extends AbstractGoogleJsonClient {
                     httpRequestInitializer,
                     false);
             setBatchPath(BATCH);
+
+            log= Logger.getLogger("InfoLogging");
+            log.info("hhh"+ "JokeBuilder CONSTRUCTOR: ");
         }
 
 
         @Override
         public JokeBuilder setGoogleClientRequestInitializer(
                 com.google.api.client.googleapis.services.GoogleClientRequestInitializer googleClientRequestInitializer) {
+            log.info("hhh"+ "JokeBuilder setGoogleClientRequestInitializer: ");
+
             return (JokeBuilder) super.setGoogleClientRequestInitializer(googleClientRequestInitializer);
         }
 
         @Override
         public ApiJoker build() {
+            log.info("hhh"+ "JokeBuilder build: ");
+
             return new ApiJoker(this);
         }
         @Override
         public JokeBuilder setBatchPath(String batchPath) {
+            log.info("hhh"+ "JokeBuilder setBatchPath: ");
+
             return (JokeBuilder) super.setBatchPath(batchPath);
         }
 
         @Override
         public JokeBuilder setHttpRequestInitializer(com.google.api.client.http.HttpRequestInitializer httpRequestInitializer) {
+            log.info("hhh"+ "JokeBuilder setHttpRequestInitializer: ");
+
             return (JokeBuilder) super.setHttpRequestInitializer(httpRequestInitializer);
         }
 
         @Override
         public JokeBuilder setApplicationName(String applicationName) {
+            log.info("hhh"+ "JokeBuilder setApplicationName: ");
+
             return (JokeBuilder) super.setApplicationName(applicationName);
         }
 
         @Override
         public JokeBuilder setSuppressPatternChecks(boolean suppressPatternChecks) {
+            log.info("hhh"+ "JokeBuilder setSuppressPatternChecks: ");
+
             return (JokeBuilder) super.setSuppressPatternChecks(suppressPatternChecks);
         }
 
         @Override
         public JokeBuilder setSuppressRequiredParameterChecks(boolean suppressRequiredParameterChecks) {
+            log.info("hhh"+ "JokeBuilder setSuppressRequiredParameterChecks: ");
+
             return (JokeBuilder) super.setSuppressRequiredParameterChecks(suppressRequiredParameterChecks);
         }
 
         @Override
         public JokeBuilder setSuppressAllChecks(boolean suppressAllChecks) {
+            log.info("hhh"+ "JokeBuilder setSuppressAllChecks: ");
+
             return (JokeBuilder) super.setSuppressAllChecks(suppressAllChecks);
         }
         @Override
         public JokeBuilder setRootUrl(String rootUrl) {
+//            log.info("hhh"+ "JokeBuilder setRootUrl: ");
+
             return (JokeBuilder) super.setRootUrl(rootUrl);
         }
 
         @Override
         public JokeBuilder setServicePath(String servicePath) {
+//            log.info("hhh"+ "JokeBuilder setServicePath: ");
+
             return (JokeBuilder) super.setServicePath(servicePath);
         }
 

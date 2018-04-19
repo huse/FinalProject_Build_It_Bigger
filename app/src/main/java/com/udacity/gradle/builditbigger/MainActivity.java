@@ -3,9 +3,11 @@ package com.udacity.gradle.builditbigger;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.hpr.hus.passingjokelib.MainActivityJoke;
@@ -44,12 +46,13 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-
+    protected ProgressBar progressBars;
     public void tellJoke(View view) {
        // Toast.makeText(this, getJokes(), Toast.LENGTH_SHORT).show();
-        Intent intent = new Intent(this, MainActivityJoke.class);
-        startActivity(intent);
-
+        /*Intent intent = new Intent(this, MainActivityJoke.class);
+        startActivity(intent);*/
+        Log.v("hhh","tellJoke method");
+new GettingJokeByAsynTask(progressBars,this).execute();
 
     }
 

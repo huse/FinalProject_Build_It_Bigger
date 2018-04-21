@@ -60,7 +60,7 @@ public class GettingJokeByAsynTask extends AsyncTask<Void, Void, String> {
         if(apiJoker == null) {
             ApiJoker.JokeBuilder builder = new ApiJoker.JokeBuilder(AndroidHttp.newCompatibleTransport(),
                     new AndroidJsonFactory(), null)
-                    .setRootUrl("https://build-it-bigger-backend-146014.appspot.com/_ah/api/")
+                    .setRootUrl("http://localhost:8080/_ah/api/")
                     .setGoogleClientRequestInitializer(new GoogleClientRequestInitializer() {
                         @Override
                         public void initialize(AbstractGoogleClientRequest<?> abstractGoogleClientRequest) throws IOException {
@@ -79,7 +79,7 @@ public class GettingJokeByAsynTask extends AsyncTask<Void, Void, String> {
 
             return result;
         } catch (IOException e) {
-            Log.v("hhh", "doInBackground 5");
+            Log.v("hhh", "doInBackground 5:   " + e.getMessage());
 
             return e.getMessage();
         }

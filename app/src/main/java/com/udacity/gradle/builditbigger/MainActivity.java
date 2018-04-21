@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 import com.hpr.hus.passingjokelib.MainActivityJoke;
 
-import static com.hpr.hus.libjoke.jokeClass.getJokes;
+import static com.hpr.hus.libjoke.jokeClass.gettingJokesFromJokeClass;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -22,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+       /* getSupportFragmentManager().beginTransaction().
+                add(R.id.fragment,new MainActivityFragment()).commit();*/
     }
 
 
@@ -47,8 +49,9 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
     protected ProgressBar progressBars;
+    @SuppressWarnings("unchecked")
     public void tellJoke(View view) {
-       // Toast.makeText(this, getJokes(), Toast.LENGTH_SHORT).show();
+       // Toast.makeText(this, gettingJokesFromJokeClass(), Toast.LENGTH_SHORT).show();
         /*Intent intent = new Intent(this, MainActivityJoke.class);
         startActivity(intent);*/
         Log.v("hhh","tellJoke method");
@@ -57,6 +60,6 @@ new GettingJokeByAsynTask(progressBars,this).execute();
     }
 
 public String passingJoke(){
-        return (getJokes());
+        return (gettingJokesFromJokeClass());
 }
 }

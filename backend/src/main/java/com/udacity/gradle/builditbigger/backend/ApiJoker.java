@@ -19,10 +19,10 @@ Logger log= Logger.getLogger("InfoLogging");
                         "You need at least version 1.21 of google-api-client to run version " +
                         "1.23.0 of the myJokeApi library.", com.google.api.client.googleapis.GoogleUtils.VERSION);
     }
+//https://build-it-bigger-backend-146014.appspot.com
+    public static final String BASE_DEFAULT_URL = "http://localhost:8080/_ah/api/";
 
-    public static final String BASE_DEFAULT_URL = "https://myApplicationId.appspot.com/_ah/api/";
-
-    public static final String SERVICE_DEFAULT_URL = "myJokeApi/v1/";
+    public static final String SERVICE_DEFAULT_URL = "myApi/v1/";
 
     public static final String BATCH = "batch";
 
@@ -57,7 +57,7 @@ Logger log= Logger.getLogger("InfoLogging");
     }
     public class GettingJokes extends ApiJokeRequest<MyBean> {
 
-        private static final String PATH_REST = "myjokebean";
+        private static final String PATH_REST = "mybean";
 
         protected GettingJokes() {
             super(ApiJoker.this, "GET", PATH_REST, null, MyBean.class);

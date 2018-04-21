@@ -37,16 +37,27 @@ android {
         exclude 'com/google/appengine/repackaged/org/apache/commons/codec/language/dmrules.txt'
     }
     // sourceSets { main { res.srcDirs = ['src/main/res', 'src/free/res'] } }
-    flavorDimensions 'free','paid'
+    flavorDimensions 'paid','demo','free'
     productFlavors {
-        production {
+        paid {
             dimension 'paid'
+            versionName "1.0-paid"
+            applicationId "com.udacity.gradle.builditbigger.paid"
+            buildConfigField "boolean", "PAID_VERSION", "true"
         }
         demo {
-            dimension 'free'
+            dimension 'demo'
+            versionName "1.0-demo"
+            applicationId "com.udacity.gradle.builditbigger.demo"
+            buildConfigField "boolean", "PAID_VERSION", "false"
+
         }
-        development {
+        free {
             dimension 'free'
+            versionName "1.0-free"
+            applicationId "com.udacity.gradle.builditbigger.free"
+            buildConfigField "boolean", "PAID_VERSION", "false"
+
         }
     }
 }

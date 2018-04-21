@@ -6,6 +6,9 @@
     android:layout_height="match_parent"
     tools:context="com.hpr.hus.passingjokelib.MainActivityJoke">
     <TextView
+
+        android:textSize="16sp"
+        android:padding="16dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/joke_tv"/>

@@ -45,9 +45,6 @@ android {
         paid {
             java.srcDirs('com.udacity.gradle.builditbigger.paid')
         }
-        demo {
-            java.srcDirs('com.udacity.gradle.builditbigger.demo')
-        }
         free {
             java.srcDirs('com.udacity.gradle.builditbigger.free')
         }
@@ -79,10 +76,10 @@ dependencies {
     compile project(':backend')
     freeCompile 'com.google.android.gms:play-services:11.4.0'
     freeCompile 'com.google.android.gms:play-services-ads:9.4.0'
-
+ //   annotationProcessor 'com.google.dagger:dagger-compiler:27.1.0'
     //test
 
-    androidTestCompile 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestCompile 'junit:junit:4.12'
     androidTestCompile 'com.android.support.test:runner:1.0.1'
     androidTestCompile 'com.android.support.test:rules:1.0.1'

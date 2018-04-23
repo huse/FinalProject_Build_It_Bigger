@@ -30,7 +30,9 @@ public class GettingJokeByAsynTask extends AsyncTask<Void, Void, String> {
         this.contexts =context;
         this.progressBars =progressBar;
     }
+    public GettingJokeByAsynTask(){
 
+    }
 
     @Override
     protected void onPostExecute(String result) {

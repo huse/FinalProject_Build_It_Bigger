@@ -37,6 +37,18 @@ android {
         exclude 'com/google/appengine/repackaged/org/apache/commons/codec/language/dmrules.txt'
     }
     // sourceSets { main { res.srcDirs = ['src/main/res', 'src/free/res'] } }
+
+    sourceSets {
+        paid {
+            java.srcDirs('com.udacity.gradle.builditbigger.paid')
+        }
+        demo {
+            java.srcDirs('com.udacity.gradle.builditbigger.demo')
+        }
+        free {
+            java.srcDirs('com.udacity.gradle.builditbigger.free')
+        }
+    }
     flavorDimensions 'paid','demo','free'
     productFlavors {
         paid {
@@ -69,11 +81,15 @@ dependencies {
     compile project(':libjoke')
     compile project(':passingjokelib')
     compile project(':backend')
-    implementation 'com.google.android.gms:play-services:11.4.0'
-    //testing
+    freeCompile 'com.google.android.gms:play-services:11.4.0'
+    freeCompile 'com.google.android.gms:play-services-ads:9.4.0'
+
+    //test
+
+    androidTestCompile 'com.android.support.test:runner:1.0.1'
     androidTestCompile 'junit:junit:4.12'
     androidTestCompile 'com.android.support.test:runner:1.0.1'
     androidTestCompile 'com.android.support.test:rules:1.0.1'
-    androidTestCompile 'com.android.support:support-annotations:26.0.2'
+    androidTestCompile 'com.android.support:support-annotations:27.1.0'
     androidTestCompile 'org.hamcrest:hamcrest-core:1.3'
 }

@@ -36,36 +36,41 @@ android {
         exclude 'com/google/api/client/googleapis/google.jks'
         exclude 'com/google/appengine/repackaged/org/apache/commons/codec/language/dmrules.txt'
     }
-     sourceSets {
-         main { res.srcDirs = ['src/main/java'] }
-         paid { res.srcDirs = ['src/paid/java'] }
-         free { res.srcDirs = ['src/free/java'] }
-     }
 
-    /*sourceSets {
+
+    sourceSets {
         main {
-            java.srcDirs('com.udacity.gradle.builditbigger')
+            java.srcDirs = ['src/main/java']
+            res.srcDirs = ['src/main/res']
+
         }
         paid {
-            java.srcDirs('com.udacity.gradle.builditbigger.paid')
+            java.srcDirs = ['src/paid/java']
+            res.srcDirs = ['src/paid/res']
+
         }
         free {
-            java.srcDirs('com.udacity.gradle.builditbigger.free')
+            java.srcDirs = ['src/free/java']
+            res.srcDirs = ['src/free/res']
         }
-    }*/
+    }
     flavorDimensions 'paid','free'
     productFlavors {
         paid {
             dimension 'paid'
             versionName "1.0-paid"
-            applicationId "com.udacity.gradle.builditbigger.paid"
-            buildConfigField "boolean", "PAID_VERSION", "true"
+            //applicationId "com.udacity.gradle.builditbigger.paid"
+            applicationIdSuffix ".paid"
+            //buildConfigField "boolean", "PAID_VERSION", "true"
+
         }
         free {
             dimension 'free'
             versionName "1.0-free"
-            applicationId "com.udacity.gradle.builditbigger.free"
-            buildConfigField "boolean", "PAID_VERSION", "false"
+            //applicationId "com.udacity.gradle.builditbigger.free"
+            applicationIdSuffix ".free"
+           // buildConfigField "boolean", "PAID_VERSION", "false"
+
 
         }
     }

@@ -16,8 +16,8 @@
         </afterSyncTasks>
         <option name="ALLOW_USER_CONFIGURATION" value="false" />
         <option name="MANIFEST_FILE_RELATIVE_PATH" value="/src/main/AndroidManifest.xml" />
-        <option name="RES_FOLDER_RELATIVE_PATH" value="/src/main/res" />
-        <option name="RES_FOLDERS_RELATIVE_PATH" value="file://$MODULE_DIR$/src/main/res;file://$MODULE_DIR$/src/paid/res;file://$MODULE_DIR$/src/free/res" />
+        <option name="RES_FOLDER_RELATIVE_PATH" value="/src/main/java" />
+        <option name="RES_FOLDERS_RELATIVE_PATH" value="file://$MODULE_DIR$/src/main/java;file://$MODULE_DIR$/src/paid/java;file://$MODULE_DIR$/src/free/java" />
         <option name="ASSETS_FOLDER_RELATIVE_PATH" value="/src/main/assets" />
       </configuration>
     </facet>
@@ -84,12 +84,11 @@
       <sourceFolder url="file://$MODULE_DIR$/src/testPaidFree/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/testPaidFree/rs" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/testPaidFree/shaders" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/paid/res" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/paid/java" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/paid/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/paid/assets" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/paid/aidl" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/paid/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/com.udacity.gradle.builditbigger.paid" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/paid/rs" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/paid/shaders" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/androidTestPaid/res" type="java-test-resource" />
@@ -106,12 +105,11 @@
       <sourceFolder url="file://$MODULE_DIR$/src/testPaid/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/testPaid/rs" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/testPaid/shaders" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/free/res" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/free/java" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/free/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/free/assets" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/free/aidl" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/free/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/com.udacity.gradle.builditbigger.free" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/free/rs" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/free/shaders" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/testFree/res" type="java-test-resource" />
@@ -149,12 +147,11 @@
       <sourceFolder url="file://$MODULE_DIR$/src/androidTestDebug/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/androidTestDebug/rs" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/androidTestDebug/shaders" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/main/res" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/assets" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/aidl" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/com.udacity.gradle.builditbigger" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/rs" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/shaders" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/res" type="java-test-resource" />

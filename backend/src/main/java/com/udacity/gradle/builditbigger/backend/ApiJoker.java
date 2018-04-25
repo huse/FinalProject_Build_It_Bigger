@@ -6,6 +6,7 @@ package com.udacity.gradle.builditbigger.backend;
 import com.google.api.client.googleapis.services.json.AbstractGoogleJsonClient;
 //import android.util.Log;
 
+import java.lang.annotation.Target;
 import java.util.logging.Logger;
 
 public class ApiJoker   extends AbstractGoogleJsonClient {
@@ -55,6 +56,7 @@ Logger log= Logger.getLogger("InfoLogging");
 
         super.initialize(httpClientRequest);
     }
+
     public class GettingJokes extends ApiJokeRequest<MyBean> {
 
         private static final String PATH_REST = "mybean";

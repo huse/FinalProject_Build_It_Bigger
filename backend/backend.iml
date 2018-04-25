@@ -42,9 +42,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="libjoke" exported="" />
     <orderEntry type="module" module-name="libjoke" exported="" />
-    <orderEntry type="library" exported="" scope="PROVIDED" name="appcompat-v7-26.0.2" level="project" />
-    <orderEntry type="library" exported="" scope="PROVIDED" name="logger-2.2.0" level="project" />
-    <orderEntry type="library" exported="" scope="PROVIDED" name="support-v4-26.0.2" level="project" />
     <orderEntry type="library" exported="" scope="PROVIDED" name="appengine-endpoints-1.9.59" level="project" />
     <orderEntry type="library" exported="" scope="PROVIDED" name="appengine-endpoints-deps-1.9.59" level="project" />
     <orderEntry type="library" exported="" scope="PROVIDED" name="servlet-api-2.5" level="project" />
@@ -54,14 +51,6 @@
     <orderEntry type="library" exported="" scope="PROVIDED" name="google-oauth-client-1.23.0" level="project" />
     <orderEntry type="library" exported="" scope="PROVIDED" name="google-http-client-jackson2-1.23.0" level="project" />
     <orderEntry type="library" exported="" scope="PROVIDED" name="google-http-client-1.23.0" level="project" />
-    <orderEntry type="library" exported="" scope="PROVIDED" name="animated-vector-drawable-26.0.2" level="project" />
-    <orderEntry type="library" exported="" scope="PROVIDED" name="support-vector-drawable-26.0.2" level="project" />
-    <orderEntry type="library" exported="" scope="PROVIDED" name="support-media-compat-26.0.2" level="project" />
-    <orderEntry type="library" exported="" scope="PROVIDED" name="support-fragment-26.0.2" level="project" />
-    <orderEntry type="library" exported="" scope="PROVIDED" name="support-core-utils-26.0.2" level="project" />
-    <orderEntry type="library" exported="" scope="PROVIDED" name="support-core-ui-26.0.2" level="project" />
-    <orderEntry type="library" exported="" scope="PROVIDED" name="support-compat-26.0.2" level="project" />
-    <orderEntry type="library" exported="" scope="PROVIDED" name="support-annotations-27.1.0" level="project" />
     <orderEntry type="library" exported="" scope="PROVIDED" name="appengine-api-1.0-sdk-1.9.59" level="project" />
     <orderEntry type="library" exported="" scope="PROVIDED" name="guava-jdk5-17.0" level="project" />
     <orderEntry type="library" exported="" scope="PROVIDED" name="jsr305-1.3.9" level="project" />
@@ -70,9 +59,6 @@
     <orderEntry type="library" exported="" scope="PROVIDED" name="httpcore-4.0.1" level="project" />
     <orderEntry type="library" exported="" scope="PROVIDED" name="commons-logging-1.1.1" level="project" />
     <orderEntry type="library" exported="" scope="PROVIDED" name="commons-codec-1.3" level="project" />
-    <orderEntry type="library" exported="" scope="RUNTIME" name="appcompat-v7-26.0.2" level="project" />
-    <orderEntry type="library" exported="" scope="RUNTIME" name="logger-2.2.0" level="project" />
-    <orderEntry type="library" exported="" scope="RUNTIME" name="support-v4-26.0.2" level="project" />
     <orderEntry type="library" exported="" scope="RUNTIME" name="appengine-endpoints-1.9.59" level="project" />
     <orderEntry type="library" exported="" scope="RUNTIME" name="appengine-endpoints-deps-1.9.59" level="project" />
     <orderEntry type="library" exported="" scope="RUNTIME" name="servlet-api-2.5" level="project" />
@@ -82,14 +68,6 @@
     <orderEntry type="library" exported="" scope="RUNTIME" name="google-oauth-client-1.23.0" level="project" />
     <orderEntry type="library" exported="" scope="RUNTIME" name="google-http-client-jackson2-1.23.0" level="project" />
     <orderEntry type="library" exported="" scope="RUNTIME" name="google-http-client-1.23.0" level="project" />
-    <orderEntry type="library" exported="" scope="RUNTIME" name="animated-vector-drawable-26.0.2" level="project" />
-    <orderEntry type="library" exported="" scope="RUNTIME" name="support-vector-drawable-26.0.2" level="project" />
-    <orderEntry type="library" exported="" scope="RUNTIME" name="support-media-compat-26.0.2" level="project" />
-    <orderEntry type="library" exported="" scope="RUNTIME" name="support-fragment-26.0.2" level="project" />
-    <orderEntry type="library" exported="" scope="RUNTIME" name="support-core-utils-26.0.2" level="project" />
-    <orderEntry type="library" exported="" scope="RUNTIME" name="support-core-ui-26.0.2" level="project" />
-    <orderEntry type="library" exported="" scope="RUNTIME" name="support-compat-26.0.2" level="project" />
-    <orderEntry type="library" exported="" scope="RUNTIME" name="support-annotations-27.1.0" level="project" />
     <orderEntry type="library" exported="" scope="RUNTIME" name="appengine-api-1.0-sdk-1.9.59" level="project" />
     <orderEntry type="library" exported="" scope="RUNTIME" name="guava-jdk5-17.0" level="project" />
     <orderEntry type="library" exported="" scope="RUNTIME" name="jsr305-1.3.9" level="project" />
@@ -98,9 +76,6 @@
     <orderEntry type="library" exported="" scope="RUNTIME" name="httpcore-4.0.1" level="project" />
     <orderEntry type="library" exported="" scope="RUNTIME" name="commons-logging-1.1.1" level="project" />
     <orderEntry type="library" exported="" scope="RUNTIME" name="commons-codec-1.3" level="project" />
-    <orderEntry type="library" exported="" scope="TEST" name="appcompat-v7-26.0.2" level="project" />
-    <orderEntry type="library" exported="" scope="TEST" name="logger-2.2.0" level="project" />
-    <orderEntry type="library" exported="" scope="TEST" name="support-v4-26.0.2" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="appengine-endpoints-1.9.59" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="appengine-endpoints-deps-1.9.59" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="servlet-api-2.5" level="project" />
@@ -110,14 +85,6 @@
     <orderEntry type="library" exported="" scope="TEST" name="google-oauth-client-1.23.0" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="google-http-client-jackson2-1.23.0" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="google-http-client-1.23.0" level="project" />
-    <orderEntry type="library" exported="" scope="TEST" name="animated-vector-drawable-26.0.2" level="project" />
-    <orderEntry type="library" exported="" scope="TEST" name="support-vector-drawable-26.0.2" level="project" />
-    <orderEntry type="library" exported="" scope="TEST" name="support-media-compat-26.0.2" level="project" />
-    <orderEntry type="library" exported="" scope="TEST" name="support-fragment-26.0.2" level="project" />
-    <orderEntry type="library" exported="" scope="TEST" name="support-core-utils-26.0.2" level="project" />
-    <orderEntry type="library" exported="" scope="TEST" name="support-core-ui-26.0.2" level="project" />
-    <orderEntry type="library" exported="" scope="TEST" name="support-compat-26.0.2" level="project" />
-    <orderEntry type="library" exported="" scope="TEST" name="support-annotations-27.1.0" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="appengine-api-1.0-sdk-1.9.59" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="guava-jdk5-17.0" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="jsr305-1.3.9" level="project" />

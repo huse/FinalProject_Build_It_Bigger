@@ -1,7 +1,6 @@
 package com.udacity.gradle.builditbigger;
 
 import android.content.Context;
-import android.content.Intent;
 import android.os.AsyncTask;
 import android.util.Log;
 import android.view.View;
@@ -11,7 +10,6 @@ import com.google.api.client.extensions.android.http.AndroidHttp;
 import com.google.api.client.extensions.android.json.AndroidJsonFactory;
 import com.google.api.client.googleapis.services.AbstractGoogleClientRequest;
 import com.google.api.client.googleapis.services.GoogleClientRequestInitializer;
-import com.hpr.hus.passingjokelib.MainActivityJoke;
 import com.udacity.gradle.builditbigger.backend.ApiJoker;
 
 import java.io.IOException;
@@ -22,21 +20,29 @@ import java.io.IOException;
 
 public class GettingJokeByAsynTask extends AsyncTask<Void, Void, String> {
     private ApiJoker apiJoker = null;
+    private TaskCompletionInterface taskCompletedCallback;
 
     protected Context contexts;
     protected ProgressBar progressBars;
 
-    public GettingJokeByAsynTask(ProgressBar progressBar,Context context) {
+    /*public GettingJokeByAsynTask(ProgressBar progressBar,Context context) {
         this.contexts =context;
         this.progressBars =progressBar;
-    }
-    public GettingJokeByAsynTask(){
+    }*/
 
+    public GettingJokeByAsynTask(TaskCompletionInterface callback) {
+        taskCompletedCallback = callback;
     }
 
+    /*public GettingJokeByAsynTask(){
+
+    }*/
+    public interface TaskCompletionInterface {
+        void completingTasks(String joke);
+    }
     @Override
     protected void onPostExecute(String result) {
-        Log.v("hhh", "onPostExecute 1");
+        Log.v("hhh3", "onPostExecute 1");
 
         if (progressBars !=null){
             progressBars.setVisibility(View.GONE);
@@ -46,15 +52,16 @@ public class GettingJokeByAsynTask extends AsyncTask<Void, Void, String> {
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         contexts.startActivity(intent);*/
 
-        Log.v("hhh", "onPostExecute 2");
-
-         Intent intent2 = new Intent(contexts, MainActivityJoke.class);
-        contexts.startActivity(intent2);
-        Log.v("hhh", "onPostExecute 3");
+        Log.v("hhh3", "onPostExecute 2");
+        if (taskCompletedCallback != null) {
+            taskCompletedCallback.completingTasks(result);
+        }
+         /*Intent intent2 = new Intent(contexts, MainActivityJoke.class);
+        contexts.startActivity(intent2);*/
+        Log.v("hhh3", "onPostExecute 3");
 
     }
 
-//http://10.0.2.2:8080/_ah/api/ changed to http://10.0.2.3:8080/_ah/api/
     @Override
     protected String doInBackground(Void... params) {
         Log.v("hhh", "doInBackground 1");

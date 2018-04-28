@@ -8,22 +8,24 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ProgressBar;
-import android.widget.Toast;
 
 import com.hpr.hus.passingjokelib.MainActivityJoke;
 
 import static com.hpr.hus.libjoke.jokeClass.gettingJokesFromJokeClass;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements GettingJokeByAsynTask.TaskCompletionInterface {
     public final static String JOKE_INTENT = "JOKE_INTENT";
-
+    GettingJokeByAsynTask gettingJokeByAsynTask;
+    private ProgressBar progressBar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
        /* getSupportFragmentManager().beginTransaction().
                 add(R.id.fragment,new MainActivityFragment()).commit();*/
+
+
     }
 
 
@@ -55,11 +57,39 @@ public class MainActivity extends AppCompatActivity {
         /*Intent intent = new Intent(this, MainActivityJoke.class);
         startActivity(intent);*/
         Log.v("hhh","tellJoke method");
-new GettingJokeByAsynTask(progressBars,this).execute();
+//new GettingJokeByAsynTask(progressBars,this).execute();
+
+
+        if (gettingJokeByAsynTask == null) {
+            gettingJokeByAsynTask = new GettingJokeByAsynTask(this);
+            gettingJokeByAsynTask.execute();
+        }
+
+
 
     }
 
 public String passingJoke(){
         return (gettingJokesFromJokeClass());
 }
+
+    @Override
+    public void completingTasks(String joke) {
+        jokeDelivered();
+
+        Intent intent = new Intent(this, MainActivityJoke.class);
+        intent.putExtra(MainActivityJoke.JOKE, joke);
+        startActivity(intent);
+    }
+
+    private void jokeDelivered() {
+
+
+        MainActivityFragment fragment = (MainActivityFragment)
+                getSupportFragmentManager().findFragmentById(R.id.fragment);
+
+        if (fragment != null) {
+            fragment.setJokeRequested();
+        }
+    }
 }

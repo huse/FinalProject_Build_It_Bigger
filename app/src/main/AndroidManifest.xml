@@ -8,6 +8,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
+        android:name=".Multi_Dex"
         tools:replace="android:allowBackup"
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
@@ -32,6 +33,11 @@
             android:name="com.google.android.gms.ads.AdActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
             android:theme="@android:style/Theme.Translucent" />
-    </application>
 
+    </application>
+    <!--<instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:label="Tests for my packaged app"
+        android:targetPackage="com.udacity.gradle.builditbigger.test"
+        />-->
 </manifest>

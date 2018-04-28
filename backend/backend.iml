@@ -43,11 +43,8 @@
     <orderEntry type="module" module-name="libjoke" exported="" />
     <orderEntry type="module" module-name="libjoke" exported="" />
     <orderEntry type="library" exported="" scope="PROVIDED" name="appengine-endpoints-1.9.59" level="project" />
-    <orderEntry type="library" exported="" scope="PROVIDED" name="appengine-endpoints-deps-1.9.59" level="project" />
     <orderEntry type="library" exported="" scope="PROVIDED" name="servlet-api-2.5" level="project" />
-    <orderEntry type="library" exported="" scope="PROVIDED" name="google-api-client-android-1.23.0" level="project" />
     <orderEntry type="library" exported="" scope="PROVIDED" name="google-api-client-1.23.0" level="project" />
-    <orderEntry type="library" exported="" scope="PROVIDED" name="google-http-client-android-1.23.0" level="project" />
     <orderEntry type="library" exported="" scope="PROVIDED" name="google-oauth-client-1.23.0" level="project" />
     <orderEntry type="library" exported="" scope="PROVIDED" name="google-http-client-jackson2-1.23.0" level="project" />
     <orderEntry type="library" exported="" scope="PROVIDED" name="google-http-client-1.23.0" level="project" />
@@ -60,11 +57,8 @@
     <orderEntry type="library" exported="" scope="PROVIDED" name="commons-logging-1.1.1" level="project" />
     <orderEntry type="library" exported="" scope="PROVIDED" name="commons-codec-1.3" level="project" />
     <orderEntry type="library" exported="" scope="RUNTIME" name="appengine-endpoints-1.9.59" level="project" />
-    <orderEntry type="library" exported="" scope="RUNTIME" name="appengine-endpoints-deps-1.9.59" level="project" />
     <orderEntry type="library" exported="" scope="RUNTIME" name="servlet-api-2.5" level="project" />
-    <orderEntry type="library" exported="" scope="RUNTIME" name="google-api-client-android-1.23.0" level="project" />
     <orderEntry type="library" exported="" scope="RUNTIME" name="google-api-client-1.23.0" level="project" />
-    <orderEntry type="library" exported="" scope="RUNTIME" name="google-http-client-android-1.23.0" level="project" />
     <orderEntry type="library" exported="" scope="RUNTIME" name="google-oauth-client-1.23.0" level="project" />
     <orderEntry type="library" exported="" scope="RUNTIME" name="google-http-client-jackson2-1.23.0" level="project" />
     <orderEntry type="library" exported="" scope="RUNTIME" name="google-http-client-1.23.0" level="project" />
@@ -77,11 +71,8 @@
     <orderEntry type="library" exported="" scope="RUNTIME" name="commons-logging-1.1.1" level="project" />
     <orderEntry type="library" exported="" scope="RUNTIME" name="commons-codec-1.3" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="appengine-endpoints-1.9.59" level="project" />
-    <orderEntry type="library" exported="" scope="TEST" name="appengine-endpoints-deps-1.9.59" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="servlet-api-2.5" level="project" />
-    <orderEntry type="library" exported="" scope="TEST" name="google-api-client-android-1.23.0" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="google-api-client-1.23.0" level="project" />
-    <orderEntry type="library" exported="" scope="TEST" name="google-http-client-android-1.23.0" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="google-oauth-client-1.23.0" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="google-http-client-jackson2-1.23.0" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="google-http-client-1.23.0" level="project" />

@@ -8,7 +8,7 @@ import static com.hpr.hus.libjoke.jokeClass.gettingJokesFromJokeClass;
 
 
 public class MainActivityJoke extends AppCompatActivity {
-
+    public static final String JOKE = "joke";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

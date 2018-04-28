@@ -25,15 +25,15 @@ dependencies {
     //implementation 'com.orhanobut:logger:2.2.0'
     //implementation "com.android.support:support-v4:27.1.1"
     implementation 'com.google.appengine:appengine-endpoints:1.9.59'
-    implementation 'com.google.appengine:appengine-endpoints-deps:1.9.59'
+    //this was cause the dex duplicate problem:
+   // implementation 'com.google.appengine:appengine-endpoints-deps:1.9.59'
     implementation 'javax.servlet:servlet-api:2.5'
     appengineSdk 'com.google.appengine:appengine-java-sdk:1.9.59'
 
     implementation 'com.google.api-client:google-api-client:1.23.0'
-    implementation 'com.google.api-client:google-api-client-android:1.23.0'
+   // implementation 'com.google.api-client:google-api-client-android:1.23.0'
     implementation 'com.google.http-client:google-http-client:1.23.0'
-    implementation 'com.google.http-client:google-http-client-android:1.23.0'
-
+   // implementation 'com.google.http-client:google-http-client-android:1.23.0'
     implementation project(':libjoke')
 }
 

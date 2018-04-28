@@ -19,7 +19,9 @@ public class MainActivityFragment extends Fragment {
 
     public MainActivityFragment() {
     }
-
+    public void setJokeRequested() {
+        testFlag = true;
+    }
     public String joke_loaded = null;
     public boolean testFlag = false;
 

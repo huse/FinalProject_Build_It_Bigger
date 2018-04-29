@@ -5,12 +5,8 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ProgressBar;
 
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.doubleclick.PublisherInterstitialAd;
-import com.udacity.gradle.builditbigger.R;
+//import com.udacity.gradle.builditbigger.R;
 
 /**
  * A placeholder fragment containing a simple view.

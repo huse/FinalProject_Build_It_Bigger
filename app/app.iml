@@ -17,7 +17,7 @@
         <option name="ALLOW_USER_CONFIGURATION" value="false" />
         <option name="MANIFEST_FILE_RELATIVE_PATH" value="/src/main/AndroidManifest.xml" />
         <option name="RES_FOLDER_RELATIVE_PATH" value="/src/main/res" />
-        <option name="RES_FOLDERS_RELATIVE_PATH" value="file://$MODULE_DIR$/src/main/res;file://$MODULE_DIR$/src/paid/res;file://$MODULE_DIR$/src/free/res" />
+        <option name="RES_FOLDERS_RELATIVE_PATH" value="file://$MODULE_DIR$/src/main/res;file://$MODULE_DIR$/src/main/res;file://$MODULE_DIR$/src/main/res" />
         <option name="ASSETS_FOLDER_RELATIVE_PATH" value="/src/main/assets" />
       </configuration>
     </facet>
@@ -84,7 +84,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src/testPaidFree/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/testPaidFree/rs" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/testPaidFree/shaders" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/paid/res" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/res" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/paid/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/paid/assets" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/paid/aidl" isTestSource="false" />
@@ -105,8 +105,8 @@
       <sourceFolder url="file://$MODULE_DIR$/src/testPaid/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/testPaid/rs" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/testPaid/shaders" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/free/res" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/free/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/resources/layout/fragment_main.xml" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/free/assets" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/free/aidl" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/free/java" isTestSource="false" />
@@ -147,7 +147,6 @@
       <sourceFolder url="file://$MODULE_DIR$/src/androidTestDebug/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/androidTestDebug/rs" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/androidTestDebug/shaders" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/main/res" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/assets" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/aidl" isTestSource="false" />
@@ -174,7 +173,6 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/builds" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/check-manifest" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/classes" />
-      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/classes-jar" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental-classes" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental-runtime-classes" />
@@ -194,7 +192,6 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/split-apk" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/splits-support" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/symbols" />
-      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/tmp" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/transforms" />
       <excludeFolder url="file://$MODULE_DIR$/build/outputs" />
       <excludeFolder url="file://$MODULE_DIR$/build/tmp" />

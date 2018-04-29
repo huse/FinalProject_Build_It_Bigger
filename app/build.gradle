@@ -87,12 +87,14 @@ android {
         }
         paid {
             java.srcDirs = ['src/paid/java']
-            res.srcDirs = ['src/paid/res']
+            res.srcDirs = ['src/main/res']
+
 
         }
         free {
             java.srcDirs = ['src/free/java']
-            res.srcDirs = ['src/free/res']
+            res.srcDirs = ['src/main/res']
+            resources.srcDir file('src/main/resources/layout/fragment_main.xml')
         }
         androidTest {
             java.srcDirs  = ['src/androidTest/java']

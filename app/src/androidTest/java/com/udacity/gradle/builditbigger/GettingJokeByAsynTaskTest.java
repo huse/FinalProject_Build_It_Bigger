@@ -31,7 +31,7 @@ public class GettingJokeByAsynTaskTest extends ActivityUnitTestCase<MainActivity
         String testResult = null;
         GettingJokeByAsynTask gettingJokeByAsynTask = new GettingJokeByAsynTask (null);
         gettingJokeByAsynTask.execute();
-        Thread.sleep(10000);
+       // Thread.sleep(10000);
 
         try {
             testResult = gettingJokeByAsynTask.get();

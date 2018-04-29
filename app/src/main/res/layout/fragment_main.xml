@@ -7,7 +7,7 @@
     android:paddingLeft="8dp"
     android:paddingRight="8dp"
     android:paddingTop="8dp"
-    tools:context=".MainActivityFragment">
+    tools:context="com.udacity.gradle.free.MainActivityFragment">
 
     <TextView
         android:id="@+id/instructions_text_view"
